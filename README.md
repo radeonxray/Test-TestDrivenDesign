@@ -71,13 +71,13 @@ picked up.*
   
 - *...most customers call and order an hour in advance. Some also come directly into the store. Online booking would be nice.*
   - User wants a system that can handle both in-store and online orders
-  - User wants custoemrs to be able to orders food online
+  - User wants customers to be able to orders food online
   
 - *Right now, my nephew, Alfonso, receives the orders. He will take care of operating the computer. I just need to be able to see the list of orders and somehow know which pizza is to be made as the next one. Maybe one could sort them by time.*
-
   - User wants to see the next order, sorted by the time the order was placed, showing from oldest to newest
+  
 - *When I have made a pizza, I shout to my nephew when the pizza is ready. He removes it from the list when it is picked up and paid.*
-  - User wants to be able to inform the frondesk that the order is done and ready to be picked up
+  - User wants to be able to inform the "frontdesk" that the order is done and ready to be picked up
   - User wants to be able to remove finished orders from the list of orders
   
 - *I would like to be able to store all the orders. That way I will be able to see the turnover, and later
