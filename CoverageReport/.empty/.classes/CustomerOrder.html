@@ -1,0 +1,157 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CustomerOrder</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CustomerOrder (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CustomerOrder</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (10/ 10)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">CustomerOrder$Status</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/ 4)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/ 6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (14/ 14)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;import sun.util.calendar.BaseCalendar;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.sql.Time;
+<i>4</i>&nbsp;import java.sql.Timestamp;
+<i>5</i>&nbsp;import java.util.ArrayList;
+<i>6</i>&nbsp;import java.util.Date;
+<i>7</i>&nbsp;import java.util.Timer;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;public class CustomerOrder {
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;    private ArrayList&lt;Item&gt; items;
+<i>12</i>&nbsp;    private Status status;
+<i>13</i>&nbsp;    private Timestamp orderTimeStamp;
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;
+<b class="fc"><i>16</i>&nbsp;    public enum Status{</b>
+<b class="fc"><i>17</i>&nbsp;        New,</b>
+<b class="fc"><i>18</i>&nbsp;        ReadyForPickup,</b>
+<b class="fc"><i>19</i>&nbsp;        PickedUp</b>
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    }
+<i>22</i>&nbsp;
+<b class="fc"><i>23</i>&nbsp;    public CustomerOrder(ArrayList&lt;Item&gt; items){</b>
+<b class="fc"><i>24</i>&nbsp;        this.items = items;</b>
+<b class="fc"><i>25</i>&nbsp;        this.status = Status.New;</b>
+<b class="fc"><i>26</i>&nbsp;        this.orderTimeStamp = new Timestamp(System.currentTimeMillis());</b>
+<i>27</i>&nbsp;
+<b class="fc"><i>28</i>&nbsp;    }</b>
+<i>29</i>&nbsp;
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;    public ArrayList&lt;Item&gt; getItems() {
+<b class="fc"><i>32</i>&nbsp;        return items;</b>
+<i>33</i>&nbsp;    }
+<i>34</i>&nbsp;
+<i>35</i>&nbsp;    public Status getStatus() {
+<b class="fc"><i>36</i>&nbsp;        return status;</b>
+<i>37</i>&nbsp;    }
+<i>38</i>&nbsp;
+<i>39</i>&nbsp;    public void setStatus(Status status) {
+<b class="fc"><i>40</i>&nbsp;        this.status = status;</b>
+<b class="fc"><i>41</i>&nbsp;    }</b>
+<i>42</i>&nbsp;
+<i>43</i>&nbsp;    public Timestamp getOrderTimeStamp() {
+<b class="fc"><i>44</i>&nbsp;        return orderTimeStamp;</b>
+<i>45</i>&nbsp;    }
+<i>46</i>&nbsp;
+<i>47</i>&nbsp;
+<i>48</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2019-03-06 02:10</div>
+</div>
+</body>
+</html>
