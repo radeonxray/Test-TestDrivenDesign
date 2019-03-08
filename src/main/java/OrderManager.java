@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class OrderManager {
+public class OrderManager implements OrderManagerInterface {
 
     private ArrayList<CustomerOrder> currentCustomerOrderList;
     private ArrayList<CustomerOrder> removedCustomerOrderList;

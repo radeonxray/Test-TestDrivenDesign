@@ -1,4 +1,4 @@
-public class Item {
+public class Item implements ItemInterface{
 
     private int id;
     private String text;
@@ -8,6 +8,9 @@ public class Item {
         this.id = id;
         this.text = text;
         this.price = price;
+    }
+
+    public Item() {
     }
 
     public int getId() {

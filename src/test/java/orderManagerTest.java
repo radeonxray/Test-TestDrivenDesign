@@ -2,7 +2,7 @@ import org.junit.jupiter.api.*;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
-class OrderManagerTest {
+class orderManagerTest {
 
     private OrderManager orderManager;
 
@@ -126,7 +126,7 @@ class OrderManagerTest {
         orderManager.newOrder(customerOrder6);
     }
 
-    //Test that the orderManager has 1 customerOrder within it
+    //Test that the OrderManager has 1 customerOrder within it
     @Test
     public void testOrderManagerIsNotEmpty(){
 
@@ -135,7 +135,7 @@ class OrderManagerTest {
         Assertions.assertEquals( 1,orderManager.size());
     }
 
-    //Test that the orderManager is empty
+    //Test that the OrderManager is empty
     @Test
     public void testOrderManagerIsEmpty(){
 

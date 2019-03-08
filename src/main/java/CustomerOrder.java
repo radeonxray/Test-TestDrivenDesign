@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Timer;
 
-public class CustomerOrder {
+public class CustomerOrder implements CustomerOrderInterface{
 
     private ArrayList<Item> items;
     private Status status;
