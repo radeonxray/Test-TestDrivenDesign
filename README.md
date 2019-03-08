@@ -14,8 +14,10 @@ Demos:
 
 The program was created using Intellij and Java SDK 11, so you might need to do the following in order to make the program work:
 
-- Mark the "src"-folder as the "source"-folder
-- Right-click on the "src"-folder, select the "Mark Directory as.." and finally select the (blue) "Source Root"
+- Mark the "java"-folder found under "src" -> "main" as the "source"-folder
+-   Right-click on the "java"-folder, select the "Mark Directory as.." and finally select the (blue) "Source Root"
+- Similar with the (test) "java"-folder, found under "src"-> "test"
+-   Right-click on the (test)"java"-folder, select the "Mark Directory as.." and finally select the (green) "Test Source Root"
 - Select Output-folder
   - Create a new folder within the project named "out"
   - Go to File -> Project Structure... -> Project Settings -> Project -> Project Compiler output and select your out-folder
