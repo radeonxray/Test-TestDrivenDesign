@@ -106,6 +106,7 @@ make statistics on which pizzas are the most popular*
 - Heavy use of interfaces
 - Tried to make all methods non-void, forcing the to return something.
 - Also tried to make methods and functions use Paramaters as much as possible
+- Some minor flaws with the timeStamps, due to the Thread.sleep() and the speed of the testing hardware, will have to be ironed out some how.
 
 -----
 
@@ -115,5 +116,6 @@ make statistics on which pizzas are the most popular*
 - POM-file includes list of Maven dependencies.
 - Very small project so hard to actually make the code more testable, but having constructors with dependencies specified, makes it easy to inject depedencies when mocking objects. In bigger java projects you could use factories or other design patterns, to make behaviour
  - Inversion of control via the package manager, so if an object requires a third party dependency, either a fake object, or a mocked object with behaviour can be used
+ - A lot of time and code was spent to setup @Before in all 3 of the major test-classes, but in particular the one concering `orderManagerTest`. Combined with Methods/Functions that are used to setup data, since a lot of the test had to use the same starting data, it made sense to divide the setup functions and setup, to make the code look more clean, and take less space. 
 
 -----
