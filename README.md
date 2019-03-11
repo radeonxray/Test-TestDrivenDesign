@@ -87,4 +87,33 @@ make statistics on which pizzas are the most popular*
   - User wants the system to record and show each days business 
   - User wants to be able to see statistics, such as which pizza's are the most popular
   
-  
+  -------
+## The TDD mindset by using both Mockist and Classic style
+
+- Mostly done with Classic style, since we are still trying to get our heads around how to write TDD with Mockito.
+- Only very little development was done with Mockito
+- Great success developing TDD using the classic style
+
+------
+
+## Practice pair programming
+
+- Developed using 1 machine with a schoolmate next to me. We took turns developing and instructing each other
+-----
+
+## Practice working with techniques to make code testable and maintainable
+
+- Heavy use of interfaces
+- Tried to make all methods non-void, forcing the to return something.
+- Also tried to make methods and functions use Paramaters as much as possible
+
+-----
+
+## Handle dependencies in configuration file (Inversion Of Control) in order to make the program modular and extensible by means of Dependency Injection.
+
+- Any changes to the original objects will inevitably force one to adapt the existing test.
+- POM-file includes list of Maven dependencies.
+- Very small project so hard to actually make the code more testable, but having constructors with dependencies specified, makes it easy to inject depedencies when mocking objects. In bigger java projects you could use factories or other design patterns, to make behaviour
+ - Inversion of control via the package manager, so if an object requires a third party dependency, either a fake object, or a mocked object with behaviour can be used
+
+-----
